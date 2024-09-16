@@ -1,0 +1,26 @@
+{
+  "project_name": "cookiecutter-python-poetry",
+  "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
+  "package_name": "{{ cookiecutter.project_name.replace('-', '_') }}",
+  "friendly_name": "{{ cookiecutter.project_name.replace('-', ' ').title() }}",
+  "author": "Meghan Thommes",
+  "email": "meghan.thommes@gmai.com",
+  "github_user": "megthommes",
+  "version": "0.0.0",
+  "copyright_year": "{% now 'utc', '%Y' %}",
+  "license": ["MIT", "Apache-2.0", "GPL-3.0"],
+  "development_status": [
+    "Development Status :: 1 - Planning",
+    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 6 - Mature",
+    "Development Status :: 7 - Inactive"
+  ],
+  "publish_to": ["pypi", "artifactory", "none"],
+  "mkdocs": ["y", "n"],
+  "codecov": ["y", "n"],
+  "dockerfile": ["y", "n"],
+  "devcontainer": ["y", "n"]
+}
